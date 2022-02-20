@@ -1,5 +1,4 @@
 .hero {
-  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -67,10 +66,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/desktop/hero-1200@2x.jpg);
-  }
-
-  @include tablet {
-    margin-top: 80px;
   }
 
   @include desktop {

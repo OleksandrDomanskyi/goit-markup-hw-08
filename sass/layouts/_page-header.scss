@@ -3,7 +3,6 @@
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 80px;
   z-index: 50;
 
   color: var(--title-text-color);
@@ -19,7 +18,7 @@
 
 /* Логотип в хедере */
 .logo__link {
-  margin-right: 93px;
+  margin-right: 88px;
   display: block;
 
   color: var(--primary-black-color);
@@ -29,15 +28,30 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  @include desktop {
+    margin-right: 93px;
+  }
 }
+
 .logo__span {
   color: var(--accent-color);
 }
 
 /* Меню навигации и контактов */
 .main-nav {
-  display: flex;
   align-items: center;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .main-nav__logo {
@@ -54,13 +68,21 @@
 }
 
 .main-nav__contact-nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
 }
 
 .contact-nav__item + .contact-nav__item {
-  margin-left: 50px;
+  @include desktop {
+    margin-left: 50px;
+  }
 }
 
 .site-nav__link {
@@ -106,8 +128,6 @@
 
 .contact-nav__link {
   display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   fill: var(--primary-text-color);
   color: var(--primary-text-color);
@@ -119,6 +139,11 @@
   &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
+  }
+
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
