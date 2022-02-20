@@ -2,13 +2,28 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  font-size: 28px;
+  line-height: (33px/28px);
+
+  @include desktop {
+    font-size: 36px;
+    line-height: (42px/36px);
+  }
 }
 
 .clients__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: -30px;
+
+  @include desktop {
+    margin-top: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .clients__item {
@@ -19,8 +34,17 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  & + & {
-    margin-left: 30px;
+  width: calc(100% / 2 - 15px);
+  margin-bottom: 30px;
+
+  @include tablet {
+    width: calc(100% / 3 - 15px);
+  }
+
+  @include desktop {
+    & + & {
+      margin-left: 30px;
+    }
   }
 
   &:hover,
@@ -32,7 +56,6 @@
 
 .clients__link {
   display: flex;
-  width: 170px;
   height: 92px;
 
   align-items: center;
@@ -43,6 +66,18 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include mobile {
+    width: 210px;
+  }
+
+  @include tablet {
+    width: 226px;
+  }
+
+  @include desktop {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {

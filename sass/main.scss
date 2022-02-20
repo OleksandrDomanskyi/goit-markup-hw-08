@@ -1,5 +1,10 @@
+@import './utils/mixins';
 @import './base/basestyle';
 @import './base/common';
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/current-link';
+@import './utils/section';
 
 @import './components/container';
 @import './components/btn';
@@ -8,14 +13,9 @@
 
 @import './layouts/page-header';
 @import './layouts/page-hero';
-@import './layouts/section-fearures';
+@import './layouts/section-features';
 @import './layouts/section-examples';
 @import './layouts/section-team';
 @import './layouts/section-clients';
 @import './layouts/section-portfolio';
 @import './layouts/page-footer';
-
-@import './utils/variables';
-@import './utils/hidden';
-@import './utils/current-link';
-@import './utils/section';
