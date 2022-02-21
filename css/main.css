@@ -768,11 +768,13 @@ img {
   line-height: 1.61538;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  width: 80%;
 }
 
 @media screen and (min-width: 480px) {
   .hero__title {
     font-size: 26px;
+    width: 360px;
   }
 }
 
@@ -780,6 +782,7 @@ img {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 
@@ -965,7 +968,6 @@ img {
   width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  outline: 1px solid gold;
 }
 
 @media screen and (min-width: 768px) {
@@ -1001,7 +1003,6 @@ img {
   padding-top: 30px;
   padding-bottom: 24px;
   background-color: var(--primary-white-color);
-  outline: 1px solid green;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1171,7 +1172,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio__list {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-right: -15px;
     margin-left: -15px;
   }
@@ -1199,6 +1200,9 @@ img {
     width: calc(100% / 2 - 30px);
     margin-right: 15px;
     margin-left: 15px;
+  }
+  .portfolio__list__item:last-child {
+    margin-bottom: 0;
   }
 }
 

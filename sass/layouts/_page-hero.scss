@@ -90,14 +90,17 @@
   line-height: (42px/26px);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  width: 80%;
 
   @include mobile {
     font-size: 26px;
+    width: 360px;
   }
 
   @include desktop {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 

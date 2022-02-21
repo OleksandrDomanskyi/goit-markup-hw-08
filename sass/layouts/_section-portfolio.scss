@@ -29,7 +29,7 @@
   flex-wrap: wrap;
   margin-top: 25px;
   @include tablet {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-right: -15px;
     margin-left: -15px;
   }
@@ -58,6 +58,9 @@
     width: calc(100% / 2 - 30px);
     margin-right: 15px;
     margin-left: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @include desktop {
     width: calc(100% / 3 - 30px);
